@@ -1,0 +1,6 @@
+
+<ul style="display:flex; gap: 30px; list-style: none;" >
+<li *ngFor="let item of items$ | async" >
+  {{item.name}} || {{item.price | currency}}
+</li>
+</ul>
